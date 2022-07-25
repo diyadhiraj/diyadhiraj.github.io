@@ -16,17 +16,18 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     text-align: center;
+    padding: 10px;
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.25fr 1fr 0.75fr 0.25fr 0.25fr;
     grid-template-areas: 
-    "t t t t"
-    "d d b b"
-    "v v v v"
-    "l l g g"
-    "c c c c";
+    "t t"
+    "d b"
+    "v v"
+    "l g"
+    "c c";
     
     gap: 15px;
     
@@ -58,8 +59,55 @@ h2 {
 .diya {
     grid-area: d;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr 2fr;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l";
+    
+    gap: 10px;
+    justify-content: center;
+}
+.pacman-heading {
+    grid-area: a;
+}
+.eye-heading {
+    grid-area: b;
+}
+.bus-heading {
+    grid-area: c;
+}
+.pacman-image {
+    grid-area: d;
+}
+.eye-image {
+    grid-area: e;
+}
+.bus-image {
+    grid-area: f;
+}
+.pacman-link {
+    grid-area: g;
+    text-align: center;
+}
+.eye-link {
+    grid-area: h;
+    text-align: center;
+}
+.bus-link {
+    grid-area: i;
+    text-align: center;
+}
+.pacman-description {
+    grid-area: j;
+}
+.eye-description {
+    grid-area: k;
+}
+.bus-description {
+    grid-area: l;
 }
